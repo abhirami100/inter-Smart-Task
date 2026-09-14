@@ -54,13 +54,11 @@ export function Header() {
 				<NavMenu className="hidden items-center gap-8 min-[1100px]:flex" />
 
 				<div className="flex items-center gap-3">
-					<Button
-						href="#contact"
-						variant="para"
-						className="hidden min-[1100px]:inline-flex"
-					>
-						Get in touch
-					</Button>
+					<div className="hidden min-[1100px]:block">
+						<Button href="#contact" variant="para">
+							Get in touch
+						</Button>
+					</div>
 
 					<button
 						type="button"
