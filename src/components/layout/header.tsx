@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Logo } from "@/components/layout/logo";
 import { NavMenu } from "@/components/layout/nav-menu";
+import { Button } from "@/components/ui/button";
 
 /**
  * Site header: logo, primary nav (desktop), CTA button, and a
@@ -53,12 +54,13 @@ export function Header() {
 				<NavMenu className="hidden items-center gap-8 min-[1100px]:flex" />
 
 				<div className="flex items-center gap-3">
-					<a
+					<Button
 						href="#contact"
-						className="hidden rounded-full border-2 border-transparent bg-para px-8 py-2 text-base font-medium text-theme transition-colors duration-300 hover:border-para hover:bg-transparent hover:text-para min-[1100px]:inline-block"
+						variant="para"
+						className="hidden min-[1100px]:inline-flex"
 					>
 						Get in touch
-					</a>
+					</Button>
 
 					<button
 						type="button"
@@ -101,13 +103,14 @@ export function Header() {
 					linkClassName="text-lg"
 					onLinkClick={closeMenu}
 				/>
-				<a
+				<Button
 					href="#contact"
+					variant="para"
 					onClick={closeMenu}
-					className="mt-8 inline-block rounded-full border-2 border-transparent bg-para px-8 py-2 text-center text-base font-medium text-theme transition-colors duration-300 hover:border-para hover:bg-transparent hover:text-para"
+					className="mt-8"
 				>
 					Get in touch
-				</a>
+				</Button>
 			</div>
 		</div>
 		</>

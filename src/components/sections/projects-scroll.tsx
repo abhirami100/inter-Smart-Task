@@ -115,8 +115,7 @@ export function ProjectsScroll() {
 
       <div
         ref={cursorRef}
-        style={{ transform: "translate(-50%, -50%)" }}
-        className="pointer-events-none fixed z-50 flex h-16 w-16 items-center justify-center rounded-full border border-white/40 bg-white/20 text-xs font-medium text-white opacity-0 shadow-lg backdrop-blur-md transition-[opacity,transform] duration-150 ease-out"
+        className="pointer-events-none fixed z-50 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/40 bg-white/20 text-xs font-medium text-white opacity-0 shadow-lg backdrop-blur-md transition-[opacity,transform] duration-150 ease-out"
       >
         Drag
       </div>

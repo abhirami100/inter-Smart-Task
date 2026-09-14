@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { HERO_SLIDES } from "@/lib/hero-slides";
+import { Button } from "@/components/ui/button";
 
 const SLIDE_COUNT = HERO_SLIDES.length;
 const AUTO_ADVANCE_MS = 6000;
@@ -57,12 +58,9 @@ export function Hero() {
 						{activeSlide.description}
 					</p>
 
-					<a
-						href={activeSlide.ctaHref}
-						className="mt-8 inline-block rounded-full border-2 border-transparent bg-primary px-8 py-2 text-base font-medium text-theme transition-colors duration-300 hover:border-primary hover:bg-transparent hover:text-primary"
-					>
+					<Button href={activeSlide.ctaHref} variant="primary" className="mt-8">
 						{activeSlide.ctaLabel}
-					</a>
+					</Button>
 				</div>
 			</div>
 

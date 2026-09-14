@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useCallback, useState } from "react";
 import { SERVICES } from "@/lib/services-data";
 import { ServiceAccordionItem } from "@/components/sections/service-accordion-item";
+import { Button } from "@/components/ui/button";
 
 /**
  * "Our Artificial Intelligence Services" section: intro copy, a diagram
@@ -56,12 +57,7 @@ export function Services() {
 				</div>
 
 				<div className="mt-12 text-center">
-					<a
-						href="#services"
-						className="inline-block rounded-full border-2 border-transparent bg-theme px-8 py-2 text-base font-medium text-para transition-colors duration-300 hover:border-theme hover:bg-transparent hover:text-theme"
-					>
-						View all services
-					</a>
+					<Button href="#services">View all services</Button>
 				</div>
 			</div>
 		</section>

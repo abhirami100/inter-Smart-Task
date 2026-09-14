@@ -1,4 +1,5 @@
 import { ProjectsScroll } from "@/components/sections/projects-scroll";
+import { Button } from "@/components/ui/button";
 
 /**
  * "Our Recent AI Projects" section: intro copy followed by a project
@@ -23,12 +24,7 @@ export function RecentProjects() {
 			</div>
 
 			<div className="mt-12 text-center">
-				<a
-					href="#projects"
-					className="inline-block rounded-full border-2 border-transparent bg-theme px-8 py-2 text-base font-medium text-para transition-colors duration-300 hover:border-theme hover:bg-transparent hover:text-theme"
-				>
-					View all projects
-				</a>
+				<Button href="#projects">View all projects</Button>
 			</div>
 		</section>
 	);

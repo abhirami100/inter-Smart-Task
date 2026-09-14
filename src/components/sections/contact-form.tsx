@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { Button } from "@/components/ui/button";
 
 interface ContactFormValues {
 	email: string;
@@ -85,11 +86,7 @@ export function ContactForm() {
 					className="w-full resize-none rounded-lg border border-[#2D4362] bg-white px-4 py-3 text-sm text-theme placeholder:text-theme focus:outline-none"
 				/>
 
-				<button
-					type="submit"
-					disabled={isSubmitting}
-					className="inline-flex w-fit cursor-pointer items-center justify-center gap-2 rounded-full border-2 border-transparent bg-theme px-8 py-2 text-base font-medium text-para transition-colors duration-300 hover:border-theme hover:bg-transparent hover:text-theme disabled:cursor-not-allowed disabled:opacity-60"
-				>
+				<Button type="submit" disabled={isSubmitting}>
 					{isSubmitting && (
 						<span
 							aria-hidden="true"
@@ -97,7 +94,7 @@ export function ContactForm() {
 						/>
 					)}
 					{isSubmitting ? "Submitting..." : "Submit"}
-				</button>
+				</Button>
 
 				{isSubmitted && (
 					<p role="status" className="text-sm font-medium text-theme">
