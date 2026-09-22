@@ -7,10 +7,7 @@ interface ServiceAccordionItemProps {
 	onToggle: (id: string) => void;
 }
 
-/**
- * Single collapsible service row. Memoized so toggling one item doesn't
- * re-render the sibling rows in the list.
- */
+// One collapsible service row in the accordion
 function ServiceAccordionItemComponent({
 	service,
 	isOpen,

@@ -6,10 +6,7 @@ interface FooterLinkListProps {
   links: FooterLink[];
 }
 
-/**
- * Titled column of footer links, reused for both the "Services" and
- * "Pages" groups.
- */
+// One footer column with a title and a list of links
 function FooterLinkListComponent({ title, links }: FooterLinkListProps) {
   return (
     <div>

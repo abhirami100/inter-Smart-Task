@@ -4,14 +4,7 @@ import { useEffect, useRef } from "react";
 import { PROJECTS } from "@/lib/projects-data";
 import { ProjectCard } from "@/components/sections/project-card";
 
-/**
- * Horizontal-scroll gallery for the project cards. The row starts flush
- * with the page's left gutter and bleeds off the right edge of the
- * viewport (matching the design) — the first card shows in full, the next
- * peeks in at the edge. Visitors can swipe or drag (mouse or touch) the
- * row to see the rest, with a glassy "drag" cursor following the pointer
- * whenever it's over a card.
- */
+// Horizontal project gallery you can drag or swipe through
 export function ProjectsScroll() {
   const trackRef = useRef<HTMLDivElement>(null);
   const cursorRef = useRef<HTMLDivElement>(null);

@@ -6,10 +6,7 @@ import { AI_PROCESS_STEPS } from "@/lib/ai-process-data";
 
 const STEP_COUNT = AI_PROCESS_STEPS.length;
 
-/**
- * "Our AI Development Process" section: a step tracker with prev/next
- * navigation, clickable step tabs, and a detail card per step.
- */
+// The "Our AI Development Process" step tracker
 export function AiProcess() {
 	const [activeIndex, setActiveIndex] = useState(0);
 

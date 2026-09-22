@@ -15,10 +15,7 @@ const INITIAL_VALUES: ContactFormValues = {
 	message: "",
 };
 
-/**
- * "Schedule Meeting" contact form. Controlled inputs with a mock async
- * submit handler that surfaces a loading state and a success message.
- */
+// The "Schedule Meeting" contact form
 export function ContactForm() {
 	const [values, setValues] = useState<ContactFormValues>(INITIAL_VALUES);
 	const [isSubmitting, setIsSubmitting] = useState(false);
@@ -31,7 +28,7 @@ export function ContactForm() {
 		};
 
 	const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-		// Letters and spaces only — strips out numbers/symbols as the user types.
+		// Only allow letters and spaces in the name field
 		const textOnly = event.target.value.replace(/[^a-zA-Z\s]/g, "");
 		setValues((current) => ({ ...current, name: textOnly }));
 	};

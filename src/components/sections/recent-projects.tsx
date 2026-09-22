@@ -1,10 +1,7 @@
 import { ProjectsScroll } from "@/components/sections/projects-scroll";
 import { Button } from "@/components/ui/button";
 
-/**
- * "Our Recent AI Projects" section: intro copy followed by a project
- * preview grid and a "View all projects" CTA.
- */
+// The "Our Recent AI Projects" section
 export function RecentProjects() {
 	return (
 		<section className="bg-white py-16 sm:py-20">

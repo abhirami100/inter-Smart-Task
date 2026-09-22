@@ -6,10 +6,7 @@ interface ProjectCardProps {
   project: Project;
 }
 
-/**
- * Single project preview. Falls back to a neutral placeholder when no
- * image asset has been supplied yet, so the section still renders cleanly.
- */
+// One project preview card, with a placeholder if there's no image yet
 function ProjectCardComponent({ project }: ProjectCardProps) {
   return (
     <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-box">

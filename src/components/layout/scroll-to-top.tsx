@@ -4,10 +4,7 @@ import { useEffect, useState } from "react";
 
 const SHOW_AFTER_PX = 400;
 
-/**
- * Floating "back to top" button. Fades in once the page has scrolled past
- * a threshold and smooth-scrolls back to the top on click.
- */
+// Floating "back to top" button that fades in after scrolling down
 export function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
 

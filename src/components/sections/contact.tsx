@@ -1,9 +1,6 @@
 import { ContactForm } from "@/components/sections/contact-form";
 
-/**
- * "Let's talk" contact section: intro copy paired with a schedule-meeting
- * form, on the dedicated contact background color.
- */
+// The "Let's talk" contact section
 export function Contact() {
 	return (
 		<section

@@ -8,7 +8,7 @@ export interface HeroSlide {
 	ctaHref: string;
 }
 
-// Placeholder slide content until real campaign copy/imagery is supplied.
+// Placeholder content until the real copy and images are ready
 export const HERO_SLIDES: HeroSlide[] = [
 	{
 		id: "ai-development",

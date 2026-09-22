@@ -7,10 +7,7 @@ interface NavMenuProps {
   onLinkClick?: () => void;
 }
 
-/**
- * Shared list of primary navigation links, reused by the desktop nav
- * and the mobile menu so the link set stays DRY.
- */
+// Nav links list, shared by the desktop nav and the mobile menu
 function NavMenuComponent({
   className = "",
   linkClassName = "text-base",

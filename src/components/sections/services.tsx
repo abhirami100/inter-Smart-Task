@@ -6,10 +6,7 @@ import { SERVICES } from "@/lib/services-data";
 import { ServiceAccordionItem } from "@/components/sections/service-accordion-item";
 import { Button } from "@/components/ui/button";
 
-/**
- * "Our Artificial Intelligence Services" section: intro copy, a diagram
- * graphic, and an accordion of service offerings (one open at a time).
- */
+// The "Our Artificial Intelligence Services" section with the accordion list
 export function Services() {
 	const [activeId, setActiveId] = useState<string>(SERVICES[0].id);
 

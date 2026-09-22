@@ -8,12 +8,7 @@ import { Button } from "@/components/ui/button";
 const SLIDE_COUNT = HERO_SLIDES.length;
 const AUTO_ADVANCE_MS = 6000;
 
-/**
- * Landing hero: auto-advancing slider with a full-bleed background image
- * per slide, an overlaid heading/copy/CTA that crossfades with it, and
- * clickable dot navigation. Mobile-first: content stacks and scales down
- * on small screens, image always covers the section.
- */
+// The homepage hero - auto-playing image slider with dot navigation
 export function Hero() {
 	const [activeIndex, setActiveIndex] = useState(0);
 	const activeSlide = HERO_SLIDES[activeIndex];

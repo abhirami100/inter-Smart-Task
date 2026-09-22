@@ -29,10 +29,7 @@ const SOCIAL_LINKS: SocialLink[] = [
 	},
 ];
 
-/**
- * Row of social icon links, rendered on a shared outline style so new
- * platforms only require adding an entry to SOCIAL_LINKS.
- */
+// Row of social media icon links
 export function SocialLinks() {
 	return (
 		<div className="flex items-center gap-3">

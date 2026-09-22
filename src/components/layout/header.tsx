@@ -5,10 +5,7 @@ import { Logo } from "@/components/layout/logo";
 import { NavMenu } from "@/components/layout/nav-menu";
 import { Button } from "@/components/ui/button";
 
-/**
- * Site header: logo, primary nav (desktop), CTA button, and a
- * mobile-first collapsible menu for small screens.
- */
+// Site header with logo, nav, and a mobile menu
 export function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isHidden, setIsHidden] = useState(false);
@@ -16,8 +13,7 @@ export function Header() {
 
 	const closeMenu = () => setIsMenuOpen(false);
 
-	// Lock background scroll while the mobile menu is open so the header
-	// (and its close button) stays put instead of scrolling away with it.
+	// Stop the page from scrolling behind the open mobile menu
 	useEffect(() => {
 		document.body.style.overflow = isMenuOpen ? "hidden" : "";
 		return () => {
@@ -25,8 +21,7 @@ export function Header() {
 		};
 	}, [isMenuOpen]);
 
-	// Hide the header on scroll-down, reveal it again on scroll-up — the
-	// usual "sticky header" behavior most sites use.
+	// Hide header when scrolling down, show it again when scrolling up
 	useEffect(() => {
 		let lastScrollY = window.scrollY;
 
